@@ -68,7 +68,7 @@ const overviewChar = [
   {
     image: Unlocked,
     alt: "Icon of an unlocked lock",
-    description: <a href="https://github.com/iSoron/uhabits">Open source code</a>,
+    description: "Open source code"
   },
   {
     image: Android,
