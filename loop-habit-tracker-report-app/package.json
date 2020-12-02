@@ -1,5 +1,6 @@
 {
-  "name": "report-app",
+  "homepage": "http://jcmontoyar.github.io/loop-habit-tracker-report-app",
+  "name": "loop-habit-tracker-report-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-router-dom": "^5.1.6"
+    "@types/react-router-dom": "^5.1.6",
+    "gh-pages": "^3.1.0"
   }
 }
