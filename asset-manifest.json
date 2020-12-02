@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/loop-habit-tracker-report-app/static/css/main.c8ea3ce2.chunk.css",
-    "main.js": "/loop-habit-tracker-report-app/static/js/main.f8133791.chunk.js",
-    "main.js.map": "/loop-habit-tracker-report-app/static/js/main.f8133791.chunk.js.map",
+    "main.js": "/loop-habit-tracker-report-app/static/js/main.d88996c8.chunk.js",
+    "main.js.map": "/loop-habit-tracker-report-app/static/js/main.d88996c8.chunk.js.map",
     "runtime-main.js": "/loop-habit-tracker-report-app/static/js/runtime-main.50324072.js",
     "runtime-main.js.map": "/loop-habit-tracker-report-app/static/js/runtime-main.50324072.js.map",
     "static/css/2.0f5be09c.chunk.css": "/loop-habit-tracker-report-app/static/css/2.0f5be09c.chunk.css",
-    "static/js/2.782f6bc1.chunk.js": "/loop-habit-tracker-report-app/static/js/2.782f6bc1.chunk.js",
-    "static/js/2.782f6bc1.chunk.js.map": "/loop-habit-tracker-report-app/static/js/2.782f6bc1.chunk.js.map",
+    "static/js/2.b70781fa.chunk.js": "/loop-habit-tracker-report-app/static/js/2.b70781fa.chunk.js",
+    "static/js/2.b70781fa.chunk.js.map": "/loop-habit-tracker-report-app/static/js/2.b70781fa.chunk.js.map",
     "static/js/3.3892f267.chunk.js": "/loop-habit-tracker-report-app/static/js/3.3892f267.chunk.js",
     "static/js/3.3892f267.chunk.js.map": "/loop-habit-tracker-report-app/static/js/3.3892f267.chunk.js.map",
     "index.html": "/loop-habit-tracker-report-app/index.html",
     "static/css/2.0f5be09c.chunk.css.map": "/loop-habit-tracker-report-app/static/css/2.0f5be09c.chunk.css.map",
     "static/css/main.c8ea3ce2.chunk.css.map": "/loop-habit-tracker-report-app/static/css/main.c8ea3ce2.chunk.css.map",
-    "static/js/2.782f6bc1.chunk.js.LICENSE.txt": "/loop-habit-tracker-report-app/static/js/2.782f6bc1.chunk.js.LICENSE.txt",
+    "static/js/2.b70781fa.chunk.js.LICENSE.txt": "/loop-habit-tracker-report-app/static/js/2.b70781fa.chunk.js.LICENSE.txt",
     "static/media/Android.28a70511.svg": "/loop-habit-tracker-report-app/static/media/Android.28a70511.svg",
     "static/media/App Report Habit Tracker.acd3dc15.pdf": "/loop-habit-tracker-report-app/static/media/App Report Habit Tracker.acd3dc15.pdf",
     "static/media/commit.5c155872.svg": "/loop-habit-tracker-report-app/static/media/commit.5c155872.svg",
@@ -29,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.50324072.js",
     "static/css/2.0f5be09c.chunk.css",
-    "static/js/2.782f6bc1.chunk.js",
+    "static/js/2.b70781fa.chunk.js",
     "static/css/main.c8ea3ce2.chunk.css",
-    "static/js/main.f8133791.chunk.js"
+    "static/js/main.d88996c8.chunk.js"
   ]
 }
