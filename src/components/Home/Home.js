@@ -68,7 +68,7 @@ const overviewChar = [
   {
     image: Unlocked,
     alt: "Icon of an unlocked lock",
-    description: <a>Open source code</a>,
+    description: <a href="https://github.com/iSoron/uhabits">Open source code</a>,
   },
   {
     image: Android,
@@ -240,7 +240,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <a target="_blank"  href="https://drive.google.com/file/d/1UWNXTb2cO7N3jcxCVCtsE_RVRrS61ziL/view?usp=sharing">Click here if the PDF does not show up</a>
+      <a target="_blank"  rel="noreferrer" href="https://drive.google.com/file/d/1UWNXTb2cO7N3jcxCVCtsE_RVRrS61ziL/view?usp=sharing">Click here if the PDF does not show up</a>
     </div>
   );
 }
