@@ -13,16 +13,18 @@ import Security from "./components/Security/Security";
 
 import { Worker } from "@react-pdf-viewer/core";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   useLocation,
 } from "react-router-dom";
 
+const linkBase = "/loop-habit-tracker-report-app"
+
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename='/'>
         <NavBar />
         <Switch>
           <div className="content">
