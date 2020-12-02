@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
 
 // Pdf
 import file from "./App Report Habit Tracker.pdf";
@@ -12,11 +13,6 @@ import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 import Card from "../Card/Card.js";
 
 // Carousel
-import Carousel, {
-  slidesToShowPlugin,
-  arrowsPlugin,
-  Dots,
-} from "@brainhubeu/react-carousel";
 
 //css
 import "@brainhubeu/react-carousel/lib/style.css";
@@ -68,7 +64,7 @@ const overviewChar = [
   {
     image: Unlocked,
     alt: "Icon of an unlocked lock",
-    description: "Open source code"
+    description: "Open source code",
   },
   {
     image: Android,
@@ -97,92 +93,60 @@ const overviewRepository = [
 ];
 
 export default function Home() {
-  // State of carousell
-  const [value, setValue] = useState(0);
+  // Carousel state
+  const [index, setIndex] = useState(0);
 
-  // Change status
-  const onChange = (value) => {
-    setValue(value);
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
   };
 
   // Create new pdf plugin instance
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
   return (
-    <div className="container-fluid">
+    <div className="container">
       <h1 className="text-center">Loop Habit Tracker Report</h1>
       <div className="row">
-        <div className="col col-4 my-auto">
+        <div className="col col-6 my-auto">
           <h2>
             Habit tracker helps you build a very detailed trace of the habits
             you do in your everyday life with a beatiful and minimalistic UI
           </h2>
         </div>
-        <div className="col col-8 my-auto">
+        <div className="col col-6 my-auto">
+          <div className="container">
           <div className="row">
             <div className="col col-12">
               <Carousel
-                value={value}
-                onChange={onChange}
-                plugins={[
-                  "centered",
-                  {
-                    resolve: slidesToShowPlugin,
-                    options: {
-                      numberOfSlides: 3,
-                    },
-                  },
-                  {
-                    resolve: arrowsPlugin,
-                    options: {
-                      arrowLeft: (
-                        <button className="btnFlecha">
-                          <i className="fa fa-angle-left styleFlecha"></i>
-                        </button>
-                      ),
-                      arrowLeftDisabled: (
-                        <button className="btnFlecha">
-                          <i className="fa fa-angle-left styleFlechaDisabled"></i>
-                        </button>
-                      ),
-                      arrowRight: (
-                        <button className="btnFlecha">
-                          {" "}
-                          <i className="fa fa-angle-right styleFlecha"></i>
-                        </button>
-                      ),
-                      arrowRightDisabled: (
-                        <button className="btnFlecha">
-                          {" "}
-                          <i className="fa fa-angle-right styleFlechaDisabled"></i>
-                        </button>
-                      ),
-                      addArrowClickHandler: true,
-                    },
-                  },
-                ]}
+                activeIndex={index}
+                onSelect={handleSelect}
+                nextIcon={<span><i className="fa fa-angle-right styleFlecha"></i></span>}
+                prevIcon={<span><i className="fa fa-angle-left styleFlecha"></i></span>}
+                className="card centrar"
+                style={{
+                  height: "550px",
+                  width: "300px",
+                }}
               >
                 {functionalities.map((func) => (
-                  <img
-                    src={func.image}
-                    alt={func.alt}
-                    width="300px"
-                    height="550px"
-                    key={"image" + func.alt}
-                  />
+                  <Carousel.Item key={"image" + func.alt}>
+                    <img
+                      className="center"
+                      src={func.image}
+                      alt={func.alt}
+                      width="300px"
+                      height="550px"
+                    />
+                  </Carousel.Item>
                 ))}
               </Carousel>
-              <Dots
-                value={value}
-                onChange={onchange}
-                number={functionalities.length}
-              />
             </div>
             <div className="col col-12">
               <h3 className="text-center">
-                {functionalities[value].description}
+                {functionalities[index].description}
               </h3>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -220,14 +184,17 @@ export default function Home() {
         </div>
       </div>
       <hr />
-      <h2 className="title text-center">Check the PDF version of the report!</h2>
+      <h2 className="title text-center">
+        Check the PDF version of the report!
+      </h2>
       <div className="container">
         <div className="row justify-content-center">
-          <div className= "pdfContainer"
+          <div
+            className="pdfContainer"
             style={{
               border: "1px solid rgba(0, 0, 0, 0.3)",
               height: "850px",
-              width: "800px"
+              width: "800px",
             }}
           >
             <Viewer
@@ -240,7 +207,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <a target="_blank"  rel="noreferrer" href="https://drive.google.com/file/d/1UWNXTb2cO7N3jcxCVCtsE_RVRrS61ziL/view?usp=sharing">Click here if the PDF does not show up</a>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://drive.google.com/file/d/1UWNXTb2cO7N3jcxCVCtsE_RVRrS61ziL/view?usp=sharing"
+      >
+        Click here if the PDF does not show up
+      </a>
     </div>
   );
 }
