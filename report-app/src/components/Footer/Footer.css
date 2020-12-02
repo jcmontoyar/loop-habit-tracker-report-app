@@ -1,0 +1,6 @@
+.footer{
+    padding-top: 30px;
+    height: 400px;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
+    background-color: #673ab7;
+}

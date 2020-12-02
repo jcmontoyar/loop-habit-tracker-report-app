@@ -18,3 +18,26 @@ header{
 .imagencita{
     margin-right: 10px;
 }
+
+.colorHeader{
+    background-color: #673ab7;
+}
+
+.navBar>a{
+    color: white;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.navBar>a.selected{
+    color: #89b73a;
+}
+
+.navbar-brand>a{
+    color: white;
+}
+
+
+.navbar-brand>a.selected{
+    color: #89b73a;
+}

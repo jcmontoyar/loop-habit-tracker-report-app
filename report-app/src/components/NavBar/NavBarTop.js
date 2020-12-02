@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/nav";
-import Button from "react-bootstrap/Button";
-import Image from 'react-bootstrap/Image'
+import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
 import "./nav.css";
 import logo from "./logo.png";
@@ -11,34 +10,42 @@ const items = [
   "Performance",
   "Eventual connectivity",
   "Caching",
-  "Multi - threading",
+  "Multi-Threading",
   "Memory management",
-  "Micro - optimizations",
+  "Micro-optimizations",
   "Security",
 ];
 
-export default function NavBarTop({ activeItem, setActiveItem }) {
+export default function NavBarTop() {
+  let currLink = window.location.href.split("/");
+  currLink = currLink[currLink.length - 1];
+  console.log(currLink);
+  const [activeItem, setActiveItem] = useState(currLink);
+  const handleChange = (change) => {
+    setActiveItem(change);
+  };
+  let active = "" === currLink ? "selected" : "";
   return (
     <header className="App-header">
-      <Navbar bg="light" expand="lg" sticky="top" bg="dark" variant="dark">
-        <Navbar.Brand href="/home">
-          <Image
-            src={logo}
-            width="30"
-            height="30"
-            className="d-inline-block align-top imagencita"
-            alt="React Bootstrap logo"
-            roundedCircle
-          />
-          Loop Habit Tracker
+      <Navbar expand="lg" sticky="top" variant="dark" className="colorHeader">
+        <Navbar.Brand>
+          <Link to="/" onClick={() => handleChange("home")} className={active}>
+            <Image
+              src={logo}
+              width="30"
+              height="30"
+              className="d-inline-block align-top imagencita"
+              alt="React Bootstrap logo"
+              roundedCircle
+            />
+            Loop Habit Tracker
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto navBar">
-       
-          </Nav>
+          <Nav className="mr-auto navBar"></Nav>
           <Nav className="navBar">
-            {items.map((item) => navItem(item, activeItem))}
+            {items.map((item) => navItem(item, activeItem, handleChange))}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -46,12 +53,16 @@ export default function NavBarTop({ activeItem, setActiveItem }) {
   );
 }
 
-function navItem(nombreItem, activeItem) {
+function navItem(nombreItem, activeItem, handleChange) {
+  let active = nombreItem === activeItem ? "selected" : "";
   return (
-    <Link to={"/" + nombreItem} className="aNav">
-      <Nav.Item>
-        <Button variant="dark">{nombreItem}</Button>
-      </Nav.Item>
+    <Link
+      to={"/" + nombreItem}
+      className={"aNav " + active}
+      onClick={() => handleChange(nombreItem)}
+      key={"nav" + nombreItem}
+    >
+      <Nav.Item>{nombreItem}</Nav.Item>
     </Link>
   );
 }
