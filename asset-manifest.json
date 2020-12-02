@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/loop-habit-tracker-report-app/static/css/main.ed32fdc4.chunk.css",
-    "main.js": "/loop-habit-tracker-report-app/static/js/main.79d4951b.chunk.js",
-    "main.js.map": "/loop-habit-tracker-report-app/static/js/main.79d4951b.chunk.js.map",
-    "runtime-main.js": "/loop-habit-tracker-report-app/static/js/runtime-main.50324072.js",
-    "runtime-main.js.map": "/loop-habit-tracker-report-app/static/js/runtime-main.50324072.js.map",
-    "static/css/2.0f5be09c.chunk.css": "/loop-habit-tracker-report-app/static/css/2.0f5be09c.chunk.css",
-    "static/js/2.b70781fa.chunk.js": "/loop-habit-tracker-report-app/static/js/2.b70781fa.chunk.js",
-    "static/js/2.b70781fa.chunk.js.map": "/loop-habit-tracker-report-app/static/js/2.b70781fa.chunk.js.map",
-    "static/js/3.3892f267.chunk.js": "/loop-habit-tracker-report-app/static/js/3.3892f267.chunk.js",
-    "static/js/3.3892f267.chunk.js.map": "/loop-habit-tracker-report-app/static/js/3.3892f267.chunk.js.map",
+    "main.css": "/loop-habit-tracker-report-app/static/css/main.9c5dc521.chunk.css",
+    "main.js": "/loop-habit-tracker-report-app/static/js/main.b6763767.chunk.js",
+    "main.js.map": "/loop-habit-tracker-report-app/static/js/main.b6763767.chunk.js.map",
+    "runtime-main.js": "/loop-habit-tracker-report-app/static/js/runtime-main.89d17115.js",
+    "runtime-main.js.map": "/loop-habit-tracker-report-app/static/js/runtime-main.89d17115.js.map",
+    "static/css/2.70489d90.chunk.css": "/loop-habit-tracker-report-app/static/css/2.70489d90.chunk.css",
+    "static/js/2.abed8dea.chunk.js": "/loop-habit-tracker-report-app/static/js/2.abed8dea.chunk.js",
+    "static/js/2.abed8dea.chunk.js.map": "/loop-habit-tracker-report-app/static/js/2.abed8dea.chunk.js.map",
+    "static/js/3.4b15b7a1.chunk.js": "/loop-habit-tracker-report-app/static/js/3.4b15b7a1.chunk.js",
+    "static/js/3.4b15b7a1.chunk.js.map": "/loop-habit-tracker-report-app/static/js/3.4b15b7a1.chunk.js.map",
     "index.html": "/loop-habit-tracker-report-app/index.html",
-    "static/css/2.0f5be09c.chunk.css.map": "/loop-habit-tracker-report-app/static/css/2.0f5be09c.chunk.css.map",
-    "static/css/main.ed32fdc4.chunk.css.map": "/loop-habit-tracker-report-app/static/css/main.ed32fdc4.chunk.css.map",
-    "static/js/2.b70781fa.chunk.js.LICENSE.txt": "/loop-habit-tracker-report-app/static/js/2.b70781fa.chunk.js.LICENSE.txt",
+    "static/css/2.70489d90.chunk.css.map": "/loop-habit-tracker-report-app/static/css/2.70489d90.chunk.css.map",
+    "static/css/main.9c5dc521.chunk.css.map": "/loop-habit-tracker-report-app/static/css/main.9c5dc521.chunk.css.map",
+    "static/js/2.abed8dea.chunk.js.LICENSE.txt": "/loop-habit-tracker-report-app/static/js/2.abed8dea.chunk.js.LICENSE.txt",
     "static/media/Android.70d8d1d6.svg": "/loop-habit-tracker-report-app/static/media/Android.70d8d1d6.svg",
     "static/media/App Report Habit Tracker.acd3dc15.pdf": "/loop-habit-tracker-report-app/static/media/App Report Habit Tracker.acd3dc15.pdf",
     "static/media/commit.aa3c8e89.svg": "/loop-habit-tracker-report-app/static/media/commit.aa3c8e89.svg",
@@ -27,10 +27,10 @@
     "static/media/widgets.f9864e01.webp": "/loop-habit-tracker-report-app/static/media/widgets.f9864e01.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.50324072.js",
-    "static/css/2.0f5be09c.chunk.css",
-    "static/js/2.b70781fa.chunk.js",
-    "static/css/main.ed32fdc4.chunk.css",
-    "static/js/main.79d4951b.chunk.js"
+    "static/js/runtime-main.89d17115.js",
+    "static/css/2.70489d90.chunk.css",
+    "static/js/2.abed8dea.chunk.js",
+    "static/css/main.9c5dc521.chunk.css",
+    "static/js/main.b6763767.chunk.js"
   ]
 }
