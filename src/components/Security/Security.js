@@ -78,7 +78,7 @@ const contenido = [
         image: DataLeak,
         alt: "Leak",
         h: "400px",
-        w: "500px",
+        w: "400px",
         titulo: "Security issue regarding the data",
       },
     ],
