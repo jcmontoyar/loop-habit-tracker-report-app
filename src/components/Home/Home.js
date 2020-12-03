@@ -104,13 +104,13 @@ export default function Home() {
     <div className="container">
       <h1 className="text-center">Loop Habit Tracker Report</h1>
       <div className="row">
-        <div className="col col-6 my-auto">
+        <div className="col col-md-6 col-12 my-auto">
           <h2>
             Habit tracker helps you build a very detailed trace of the habits
             you do in your everyday life with a beatiful and minimalistic UI
           </h2>
         </div>
-        <div className="col col-6 my-auto">
+        <div className="col col-md-6  col-12 my-auto">
           <div className="container">
           <div className="row">
             <div className="col col-12">
