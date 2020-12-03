@@ -13,8 +13,6 @@ html,
   }
 
   .content{
-    padding-right: 5%;
-    padding-left: 5%;
   }
 
 h1{
@@ -30,8 +28,15 @@ h2,h3,h4,h5{
   text-justify: inter-character;
 }
 
+p{
+  line-height: 2.1;
+  text-align: justify;
+  text-justify: inter-character;
+}
+
 .title{
   padding-top: 20px;
+  padding-bottom: 20px;
   color:#6e529e;
   font-weight: 400;
   font-size: 35px;
@@ -64,4 +69,31 @@ h2,h3,h4,h5{
                      color-stop(0.44, rgb(122,153,217)),
                      color-stop(0.72, rgb(73,125,189)),
                      color-stop(0.86, rgb(28,58,148)));
+}
+
+
+.activeSubNav{
+  color: black;
+}
+
+
+.hrNav{
+  width: 90%;
+}
+
+.contenidosSub{
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #F6F8FA;
+}
+
+
+.clasecita{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.alignTextCenter{
+  text-align: center;
+  text-justify: inter-character;
 }

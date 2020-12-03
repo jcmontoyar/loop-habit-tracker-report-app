@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Card.css";
 import CardB from "react-bootstrap/Card";
 

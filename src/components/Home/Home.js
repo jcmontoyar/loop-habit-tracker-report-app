@@ -12,10 +12,7 @@ import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 // Card
 import Card from "../Card/Card.js";
 
-// Carousel
-
 //css
-import "@brainhubeu/react-carousel/lib/style.css";
 import "./Home.css";
 
 // Images

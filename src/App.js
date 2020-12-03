@@ -11,27 +11,22 @@ import Memory from "./components/Memory/Memory";
 import Microa from "./components/Micro/Micro";
 import Security from "./components/Security/Security";
 
-import { Worker } from "@react-pdf-viewer/core";
 import {
   HashRouter as Router,
   Switch,
-  Route,
-  useLocation,
+  Route
 } from "react-router-dom";
 
-const linkBase = "/loop-habit-tracker-report-app"
 
 function App() {
   return (
     <div className="App">
-      <Router basename='/'>
+      <Router basename="/">
         <NavBar />
         <Switch>
-          <div className="content">
+          <main>
             <Route exact path="/">
-              <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.5.207/build/pdf.worker.min.js">
-                <Home />
-              </Worker>
+              <Home />
             </Route>
             <Route path="/Performance">
               <Performance />
@@ -54,7 +49,7 @@ function App() {
             <Route path="/Security">
               <Security />
             </Route>
-          </div>
+          </main>
         </Switch>
       </Router>
       <Footer></Footer>

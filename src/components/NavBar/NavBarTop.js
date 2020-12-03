@@ -6,20 +6,19 @@ import { Link } from "react-router-dom";
 import "./nav.css";
 import logo from "./logo.png";
 
-const items = [
-  "Performance",
-  "Eventual connectivity",
-  "Caching",
-  "Multi-Threading",
-  "Memory management",
-  "Micro-optimizations",
-  "Security",
-];
+  const items = [
+    "Performance",
+    "Eventual connectivity",
+    "Caching",
+    "Multi-Threading",
+    "Memory management",
+    "Micro-optimizations",
+    "Security",
+  ];
 
 export default function NavBarTop() {
   let currLink = window.location.href.split("/");
   currLink = currLink[currLink.length - 1];
-  console.log(currLink);
   const [activeItem, setActiveItem] = useState(currLink);
   const handleChange = (change) => {
     setActiveItem(change);
