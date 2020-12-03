@@ -47,7 +47,7 @@ const contenido = [
         image: Launch,
         alt: "Image of the profiler when lauching the app",
         h: "800px",
-        w: "355px",
+        w: "255px",
         titulo: "Opening the app",
       },
     ],

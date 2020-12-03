@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/nav";
-import Content from "../Content/Content";
-import Card from "../Card/Card";
+import Content from "../Content/Content"
 
 //Imgs
 import Firebase from "./firebase.png";
