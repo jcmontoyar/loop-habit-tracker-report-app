@@ -1,0 +1,25 @@
+.overview tr {
+    border-bottom: solid 1px #eeeeee;
+}
+.categoryColumn a {
+     text-decoration: none;
+     color: inherit;
+}
+.countColumn {
+    text-align: right;
+    padding-right: 20px;
+    width: 50px;
+}
+.issueColumn {
+   padding-left: 16px;
+}
+.categoryColumn {
+   position: relative;
+   left: -50px;
+   padding-top: 20px;
+   padding-bottom: 5px;
+}
+
+.redicon{
+    color: red;
+}
