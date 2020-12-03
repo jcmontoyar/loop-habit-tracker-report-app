@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/loop-habit-tracker-report-app/static/css/main.5f6db14e.chunk.css",
-    "main.js": "/loop-habit-tracker-report-app/static/js/main.f39eadf8.chunk.js",
-    "main.js.map": "/loop-habit-tracker-report-app/static/js/main.f39eadf8.chunk.js.map",
+    "main.js": "/loop-habit-tracker-report-app/static/js/main.f433f964.chunk.js",
+    "main.js.map": "/loop-habit-tracker-report-app/static/js/main.f433f964.chunk.js.map",
     "runtime-main.js": "/loop-habit-tracker-report-app/static/js/runtime-main.3f7fb4bf.js",
     "runtime-main.js.map": "/loop-habit-tracker-report-app/static/js/runtime-main.3f7fb4bf.js.map",
     "static/css/2.70489d90.chunk.css": "/loop-habit-tracker-report-app/static/css/2.70489d90.chunk.css",
@@ -22,7 +22,6 @@
     "static/media/Picture1.d7c70240.png": "/loop-habit-tracker-report-app/static/media/Picture1.d7c70240.png",
     "static/media/SQLite.svg.f8c44ec7.png": "/loop-habit-tracker-report-app/static/media/SQLite.svg.f8c44ec7.png",
     "static/media/Start1.09b1b347.png": "/loop-habit-tracker-report-app/static/media/Start1.09b1b347.png",
-    "static/media/Start2.88c586d2.png": "/loop-habit-tracker-report-app/static/media/Start2.88c586d2.png",
     "static/media/androidsec.36ba4cf8.png": "/loop-habit-tracker-report-app/static/media/androidsec.36ba4cf8.png",
     "static/media/commit.aa3c8e89.svg": "/loop-habit-tracker-report-app/static/media/commit.aa3c8e89.svg",
     "static/media/dao.2def039d.webp": "/loop-habit-tracker-report-app/static/media/dao.2def039d.webp",
@@ -30,11 +29,15 @@
     "static/media/dark2.b5f4d623.jpg": "/loop-habit-tracker-report-app/static/media/dark2.b5f4d623.jpg",
     "static/media/developer.2438db3b.png": "/loop-habit-tracker-report-app/static/media/developer.2438db3b.png",
     "static/media/download.a0e0820d.png": "/loop-habit-tracker-report-app/static/media/download.a0e0820d.png",
+    "static/media/eport.71d5f7ec.jpg": "/loop-habit-tracker-report-app/static/media/eport.71d5f7ec.jpg",
     "static/media/firebase.659a78e8.png": "/loop-habit-tracker-report-app/static/media/firebase.659a78e8.png",
+    "static/media/ful.56c7ee83.jpg": "/loop-habit-tracker-report-app/static/media/ful.56c7ee83.jpg",
     "static/media/gpu.73cb3339.jpg": "/loop-habit-tracker-report-app/static/media/gpu.73cb3339.jpg",
+    "static/media/habitm.92b2d694.jpg": "/loop-habit-tracker-report-app/static/media/habitm.92b2d694.jpg",
     "static/media/habits.786928e9.webp": "/loop-habit-tracker-report-app/static/media/habits.786928e9.webp",
     "static/media/hash.0d6112fd.png": "/loop-habit-tracker-report-app/static/media/hash.0d6112fd.png",
     "static/media/intent.be6f5af1.png": "/loop-habit-tracker-report-app/static/media/intent.be6f5af1.png",
+    "static/media/launch.9fcc1a35.jpg": "/loop-habit-tracker-report-app/static/media/launch.9fcc1a35.jpg",
     "static/media/leak.36d27f17.jpg": "/loop-habit-tracker-report-app/static/media/leak.36d27f17.jpg",
     "static/media/light1.bba3f07d.jpg": "/loop-habit-tracker-report-app/static/media/light1.bba3f07d.jpg",
     "static/media/log.91f4f92b.png": "/loop-habit-tracker-report-app/static/media/log.91f4f92b.png",
@@ -45,10 +48,13 @@
     "static/media/newlogic.debfc283.png": "/loop-habit-tracker-report-app/static/media/newlogic.debfc283.png",
     "static/media/offline.5dd5abad.png": "/loop-habit-tracker-report-app/static/media/offline.5dd5abad.png",
     "static/media/oldLogic.6b734732.png": "/loop-habit-tracker-report-app/static/media/oldLogic.6b734732.png",
+    "static/media/overview.8498d5df.png": "/loop-habit-tracker-report-app/static/media/overview.8498d5df.png",
     "static/media/overviewImg.67157899.webp": "/loop-habit-tracker-report-app/static/media/overviewImg.67157899.webp",
     "static/media/performance.150b543f.png": "/loop-habit-tracker-report-app/static/media/performance.150b543f.png",
     "static/media/prefs.a3c8f153.jpg": "/loop-habit-tracker-report-app/static/media/prefs.a3c8f153.jpg",
     "static/media/rocket.6ee8420b.png": "/loop-habit-tracker-report-app/static/media/rocket.6ee8420b.png",
+    "static/media/rotate1.56bbac1b.jpg": "/loop-habit-tracker-report-app/static/media/rotate1.56bbac1b.jpg",
+    "static/media/rotatebug.3ba3907d.jpg": "/loop-habit-tracker-report-app/static/media/rotatebug.3ba3907d.jpg",
     "static/media/size.59962067.jpg": "/loop-habit-tracker-report-app/static/media/size.59962067.jpg",
     "static/media/star.26d64e09.png": "/loop-habit-tracker-report-app/static/media/star.26d64e09.png",
     "static/media/stitch.acf14049.png": "/loop-habit-tracker-report-app/static/media/stitch.acf14049.png",
@@ -60,6 +66,6 @@
     "static/css/2.70489d90.chunk.css",
     "static/js/2.5ecf5e09.chunk.js",
     "static/css/main.5f6db14e.chunk.css",
-    "static/js/main.f39eadf8.chunk.js"
+    "static/js/main.f433f964.chunk.js"
   ]
 }
