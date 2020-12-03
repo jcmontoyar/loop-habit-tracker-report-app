@@ -40,6 +40,13 @@ p{
   font-size: 35px;
 }
 
+.cardRatingtitle{
+  padding-top: 20px;
+  color:#6e529e;
+  font-weight: 300;
+  font-size: 25px;
+}
+
 
 .App-link {
   color: #61dafb;
@@ -94,4 +101,47 @@ p{
 .alignTextCenter{
   text-align: center;
   text-justify: inter-character;
+}
+
+
+.btnsBot{
+  height: 100px;
+}
+
+.right{
+  position: absolute;
+  right: 4%;
+}
+
+.left{
+  position: absolute;
+  left: 4%;
+}
+
+.btnIconLeft{
+  padding-right: 12px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.btnIconRight{
+  padding-left: 12px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.checkedStar {
+  color: orange;
+  font-size: 60px;
+}
+
+.starUnchecked {
+  color: grey;
+  font-size: 60px;
+}
+
+.colorBorderRight{
+  border-radius: 0.5px;
+  border-color: rgba(83, 80, 80, 0.205);
+  border-right-style: solid;
 }

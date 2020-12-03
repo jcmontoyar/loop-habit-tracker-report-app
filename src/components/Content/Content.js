@@ -44,7 +44,7 @@ function getText(text, titulo) {
 
 function getImg(img, alt, width, height) {
   return (
-    <div className="col col-12 col-md-6 d-flex justify-content-center">
+    <div className="col col-12 col-md-6 d-flex justify-content-center my-auto">
       <img src={img} alt={alt} width={width} height={height}  className="card"/>
     </div>
   );

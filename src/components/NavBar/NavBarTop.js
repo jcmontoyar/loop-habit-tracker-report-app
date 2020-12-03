@@ -16,14 +16,19 @@ import logo from "./logo.png";
     "Security",
   ];
 
-export default function NavBarTop() {
+export default function NavBarTop({setActiveItem, activeItem}) {
+
+  //Get current link
   let currLink = window.location.href.split("/");
   currLink = currLink[currLink.length - 1];
-  const [activeItem, setActiveItem] = useState(currLink);
+
   const handleChange = (change) => {
     setActiveItem(change);
-  };
+  }; 
+
+  // Is home active ?
   let active = "" === currLink ? "selected" : "";
+
   return (
     <header className="App-header">
       <Navbar expand="lg" sticky="top" variant="dark" className="colorHeader">

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/nav";
 import Content from "../Content/Content";
-
+import RatingCard from "../RatingCard/RatingCard"
 //Imgs
 import Picture1 from "./Start1.png";
 import Export from "./eport.jpg";
@@ -47,7 +47,7 @@ const contenido = [
         image: Launch,
         alt: "Image of the profiler when lauching the app",
         h: "800px",
-        w: "255px",
+        w: "205px",
         titulo: "Opening the app",
       },
     ],
@@ -166,20 +166,30 @@ export default function Performance() {
         )}
       </div>
       <hr />
-      <h2 className="title text-center  ">Overview</h2>
+      <h2 className="title text-center">Overview</h2>
       <div className="container">
-        <h3 className="alignTextCenter">
-          As a conclusion for this section, we might say that, overall, the app
-          does not perform well. It uses a lot of resources for routine
-          processes in all mobile apps like loading a new view and responding to
-          the interaction of the users with buttons and elements in screen. What
-          is most concerning is that the app does not even offer any feature
-          that has to do with network connection. The app UI, as we already
-          reported, is not complex at all, however, the rendering of the views
-          was one of the most resource consuming tasks. We do not recommend to
-          use this app while using other ``heavy’’ apps because it is highly
-          probable that the system will crash due to the high use of the CPU.
-        </h3>
+        <div className="row">
+          <div className="col col-12 col-md-6 colorBorderRight">
+            <p className="alignTextCenter">
+              As a conclusion for this section, we might say that, overall, the
+              app does not perform well. It uses a lot of resources for routine
+              processes in all mobile apps like loading a new view and
+              responding to the interaction of the users with buttons and
+              elements in screen. What is most concerning is that the app does
+              not even offer any feature that has to do with network connection.
+              The app UI, as we already reported, is not complex at all,
+              however, the rendering of the views was one of the most resource
+              consuming tasks. We do not recommend to use this app while using
+              other ``heavy’’ apps because it is highly probable that the system
+              will crash due to the high use of the CPU.
+            </p>
+            
+          </div>
+          <div className="col col-12 col-md-6 my-auto">
+                <RatingCard title="Performance score" score={2}></RatingCard>
+            </div>
+        </div>
+        <hr/>
       </div>
     </div>
   );

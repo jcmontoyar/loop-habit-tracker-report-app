@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/nav";
 import Content from "../Content/Content";
+import RatingCard from "../RatingCard/RatingCard"
 
 //Imgs
 import Mult from "./milti.jpg";
@@ -109,12 +110,20 @@ export default function Multi() {
       <hr />
       <h2 className="title text-center  ">Overview</h2>
       <div className="container">
-        <h3 className="alignTextCenter">
-          We conclude this section observing that we could not find more
-          evidence of multithreading when inspecting the code of the
-          application. However, there are multithreading practices implemented
-          where the app needs to.
-        </h3>
+        <div className="row">
+          <div className="col col-12 col-md-6 colorBorderRight my-auto">
+            <p className="alignTextCenter">
+              We conclude this section observing that we could not find more
+              evidence of multithreading when inspecting the code of the
+              application. However, there are multithreading practices
+              implemented where the app needs to.
+            </p>
+          </div>
+          <div className="col col-12 col-md-6 my-auto">
+            <RatingCard title="Multi - threading score" score={5}></RatingCard>
+          </div>
+        </div>
+        <hr />
       </div>
     </div>
   );

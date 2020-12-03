@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/nav";
 import Content from "../Content/Content";
+import RatingCard from "../RatingCard/RatingCard"
+
 
 //Imgs
 import Picture1 from "../Performance/Start1.png";
@@ -131,7 +133,7 @@ export default function Memory() {
   return (
     <div className="container-fluid">
       <div className="container">
-        <h1 className="text-center">Memory</h1>
+        <h1 className="text-center">Memory management</h1>
         <Navbar expand="lg" className="">
           <Navbar.Toggle aria-controls="basic-navbar-nav-subContent" />
           <Navbar.Collapse id="basic-navbar-nav-subContent">
@@ -158,9 +160,17 @@ export default function Memory() {
       <hr />
       <h2 className="title text-center  ">Overview</h2>
       <div className="container">
-        <h3 className="alignTextCenter">
-        We can conclude from this section that the application performs very well in terms of memory management (during the whole execution memory allocation was on the 42MB range) modulo the memory leaks that we found. However, these are common among the Android apps because displaying a new view usually leads to the memory leaks that we have reported. 
-        </h3>
+        <div className="row">
+          <div className="col col-12 col-md-6 colorBorderRight my-auto">
+            <p className="alignTextCenter">
+            We can conclude from this section that the application performs very well in terms of memory management (during the whole execution memory allocation was on the 42MB range) even with the memory leaks that we found. However, these are common among the Android apps because displaying a new view usually leads to the memory leaks that we have reported. 
+            </p>
+          </div>
+          <div className="col col-12 col-md-6 my-auto">
+            <RatingCard title="Memory management score" score={4}></RatingCard>
+          </div>
+        </div>
+        <hr />
       </div>
     </div>
   );

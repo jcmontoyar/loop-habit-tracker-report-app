@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/nav";
 import Content from "../Content/Content";
-import "./Linter.css"
+import RatingCard from "../RatingCard/RatingCard";
 
 //Imgs
 import Picture1 from "./Picture1.png";
@@ -16,7 +16,7 @@ import Dark2 from "./dark2.jpg";
 import Light from "./light1.jpg";
 import PerformanceIssue from "./performance.png";
 import Size from "./size.jpg";
-import MicroImg from "./Micro.png"
+import MicroImg from "./Micro.png";
 
 const items = [
   "Unnecesary objects",
@@ -127,8 +127,7 @@ const contenido = [
         alt: "Image of the linter analysis",
         h: "700px",
         w: "1000px",
-        titulo:
-          "Lint Report",
+        titulo: "Lint Report",
       },
     ],
   },
@@ -247,16 +246,24 @@ export default function Micro() {
       <hr />
       <h2 className="title text-center  ">Overview</h2>
       <div className="container">
-        <h3 className="alignTextCenter">
-          Overall habit tracker has many places where it could do more in order
-          to optimize its product, especially fixing overdrawing, removing some
-          unused resources, using primitive types over objects and replacing
-          nested linear layouts with constrained or relative ones. But in the
-          other hand, the app makes a great work in its APK and bundle size,
-          usage of weak references in multithreading, use of static in nested
-          classes, good practices in lifecycle methods and very limited usage of
-          the find view by id method.
-        </h3>
+        <div className="row">
+          <div className="col col-12 col-md-6 colorBorderRight my-auto">
+            <p className="alignTextCenter">
+              Overall habit tracker has many places where it could do more in
+              order to optimize its product, especially fixing overdrawing,
+              removing some unused resources, using primitive types over objects
+              and replacing nested linear layouts with constrained or relative
+              ones. But in the other hand, the app makes a great work in its APK
+              and bundle size, usage of weak references in multithreading, use
+              of static in nested classes, good practices in lifecycle methods
+              and very limited usage of the find view by id method.
+            </p>
+          </div>
+          <div className="col col-12 col-md-6 my-auto">
+            <RatingCard title="Micro - optimizations score" score={2.5}></RatingCard>
+          </div>
+        </div>
+        <hr />
       </div>
     </div>
   );

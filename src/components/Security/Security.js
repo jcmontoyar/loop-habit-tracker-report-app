@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/nav";
 import Content from "../Content/Content";
+import RatingCard from "../RatingCard/RatingCard";
 
 //Imgs
 import Intent from "./intent.png";
@@ -120,14 +121,22 @@ export default function Security() {
       <hr />
       <h2 className="title text-center  ">Overview</h2>
       <div className="container">
-        <h3 className="alignTextCenter">
-          Even though Loop habit tracker tries to follows good security
+        <div className="row">
+          <div className="col col-12 col-md-6 colorBorderRight my-auto">
+            <p className="alignTextCenter">
+            Even though Loop habit tracker tries to follows good security
           practices, it is not extent of security threads, specially looking at
           the habits data, which not only suffers from the common Android’s
           local storage security issues, but also since the activities that
           handle that data are exported, it makes it much easier for malicious
           apps to access that data with out the user ever finding out.
-        </h3>
+            </p>
+          </div>
+          <div className="col col-12 col-md-6 my-auto">
+            <RatingCard title="Security score" score={3}></RatingCard>
+          </div>
+        </div>
+        <hr />
       </div>
     </div>
   );

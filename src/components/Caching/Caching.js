@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/nav";
 import Content from "../Content/Content";
+import RatingCard from "../RatingCard/RatingCard"
 
 //Imgs
 import SQL from "./SQLite.svg.png";
@@ -123,7 +124,17 @@ export default function Caching() {
       <hr/>
       <h2 className="title text-center  ">Overview</h2>
       <div className="container">
-        <h3 className="alignTextCenter">Loop habit tracker uses mostly SQLite and Shared preferences in order to store the habit's data using an always offline caching strategy with help of Linked Lists.</h3>
+        <div className="row">
+          <div className="col col-12 col-md-6 colorBorderRight my-auto">
+            <p className="alignTextCenter">
+            Loop habit tracker uses mostly SQLite and Shared preferences in order to store the habit's data using an always offline caching strategy with help of Linked Lists.
+            </p>
+          </div>
+          <div className="col col-12 col-md-6 my-auto">
+            <RatingCard title="Caching score" score={4.5}></RatingCard>
+          </div>
+        </div>
+        <hr />
       </div>
     </div>
   );
