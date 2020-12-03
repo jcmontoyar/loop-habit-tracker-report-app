@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/loop-habit-tracker-report-app/static/css/main.5f6db14e.chunk.css",
-    "main.js": "/loop-habit-tracker-report-app/static/js/main.fcf74c2c.chunk.js",
-    "main.js.map": "/loop-habit-tracker-report-app/static/js/main.fcf74c2c.chunk.js.map",
+    "main.css": "/loop-habit-tracker-report-app/static/css/main.3d2b3c78.chunk.css",
+    "main.js": "/loop-habit-tracker-report-app/static/js/main.b0c3dbc1.chunk.js",
+    "main.js.map": "/loop-habit-tracker-report-app/static/js/main.b0c3dbc1.chunk.js.map",
     "runtime-main.js": "/loop-habit-tracker-report-app/static/js/runtime-main.3f7fb4bf.js",
     "runtime-main.js.map": "/loop-habit-tracker-report-app/static/js/runtime-main.3f7fb4bf.js.map",
     "static/css/2.70489d90.chunk.css": "/loop-habit-tracker-report-app/static/css/2.70489d90.chunk.css",
-    "static/js/2.37ebae82.chunk.js": "/loop-habit-tracker-report-app/static/js/2.37ebae82.chunk.js",
-    "static/js/2.37ebae82.chunk.js.map": "/loop-habit-tracker-report-app/static/js/2.37ebae82.chunk.js.map",
+    "static/js/2.9194bd5a.chunk.js": "/loop-habit-tracker-report-app/static/js/2.9194bd5a.chunk.js",
+    "static/js/2.9194bd5a.chunk.js.map": "/loop-habit-tracker-report-app/static/js/2.9194bd5a.chunk.js.map",
     "static/js/3.aaa143f5.chunk.js": "/loop-habit-tracker-report-app/static/js/3.aaa143f5.chunk.js",
     "static/js/3.aaa143f5.chunk.js.map": "/loop-habit-tracker-report-app/static/js/3.aaa143f5.chunk.js.map",
     "index.html": "/loop-habit-tracker-report-app/index.html",
     "static/css/2.70489d90.chunk.css.map": "/loop-habit-tracker-report-app/static/css/2.70489d90.chunk.css.map",
-    "static/css/main.5f6db14e.chunk.css.map": "/loop-habit-tracker-report-app/static/css/main.5f6db14e.chunk.css.map",
-    "static/js/2.37ebae82.chunk.js.LICENSE.txt": "/loop-habit-tracker-report-app/static/js/2.37ebae82.chunk.js.LICENSE.txt",
+    "static/css/main.3d2b3c78.chunk.css.map": "/loop-habit-tracker-report-app/static/css/main.3d2b3c78.chunk.css.map",
+    "static/js/2.9194bd5a.chunk.js.LICENSE.txt": "/loop-habit-tracker-report-app/static/js/2.9194bd5a.chunk.js.LICENSE.txt",
     "static/media/Android.70d8d1d6.svg": "/loop-habit-tracker-report-app/static/media/Android.70d8d1d6.svg",
     "static/media/App Report Habit Tracker.acd3dc15.pdf": "/loop-habit-tracker-report-app/static/media/App Report Habit Tracker.acd3dc15.pdf",
     "static/media/For.7b49718c.jpg": "/loop-habit-tracker-report-app/static/media/For.7b49718c.jpg",
@@ -39,8 +39,8 @@
     "static/media/habits.786928e9.webp": "/loop-habit-tracker-report-app/static/media/habits.786928e9.webp",
     "static/media/hash.0d6112fd.png": "/loop-habit-tracker-report-app/static/media/hash.0d6112fd.png",
     "static/media/intent.be6f5af1.png": "/loop-habit-tracker-report-app/static/media/intent.be6f5af1.png",
-    "static/media/launch.0748939e.jpg": "/loop-habit-tracker-report-app/static/media/launch.0748939e.jpg",
     "static/media/launch.1a949e41.jpg": "/loop-habit-tracker-report-app/static/media/launch.1a949e41.jpg",
+    "static/media/launch.6b18c5c0.jpg": "/loop-habit-tracker-report-app/static/media/launch.6b18c5c0.jpg",
     "static/media/leak.36d27f17.jpg": "/loop-habit-tracker-report-app/static/media/leak.36d27f17.jpg",
     "static/media/light1.bba3f07d.jpg": "/loop-habit-tracker-report-app/static/media/light1.bba3f07d.jpg",
     "static/media/log.91f4f92b.png": "/loop-habit-tracker-report-app/static/media/log.91f4f92b.png",
@@ -74,8 +74,8 @@
   "entrypoints": [
     "static/js/runtime-main.3f7fb4bf.js",
     "static/css/2.70489d90.chunk.css",
-    "static/js/2.37ebae82.chunk.js",
-    "static/css/main.5f6db14e.chunk.css",
-    "static/js/main.fcf74c2c.chunk.js"
+    "static/js/2.9194bd5a.chunk.js",
+    "static/css/main.3d2b3c78.chunk.css",
+    "static/js/main.b0c3dbc1.chunk.js"
   ]
 }
