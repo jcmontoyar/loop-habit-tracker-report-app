@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/nav";
 import Content from "../Content/Content";
+import Card from "../Card/Card";
 
 //Imgs
-import Start1 from "./Start1.png";
 import Firebase from "./firebase.png";
 import Mongo from "./mongodb.png";
 import Stitch from "./stitch.png";
@@ -31,7 +31,7 @@ const contenido = [
         text: "The first step would be to integrate the app with Firebase, which is as easy as following the instructions given on the website (Adding the dependencies to the project and app gradle, and adding the json given by Firebase being the most important steps). When this task is done, we can access very powerful tools, such as user authentication, which is very straight forward to implement following the guides on the website.",
         image: Firebase,
         alt: "Firebase",
-        h: "500px",
+        h: "540px",
         w: "300px",
         titulo: "Integrating the existing Habit tracker with Firebase",
       }
@@ -91,7 +91,7 @@ const contenido = [
         titulo: "Set up eventual connectivity logic",
       },
       {
-        text: "Now the function has connectivity awareness and the correct persistence of the habits to a cloud DB using the previously created DAO. Finally in order to make the application run those pending transactions we would use the current behavior of the application: Each time that the applications is opened, the list of habits gets iterated in order to be placed on the view, and now with the given the current status of each habit and the connection status, we would make the necessary transactions to the mongo DB cluster.",
+        text: "Now the function has connectivity awareness and the correct persistence of the habits to a cloud DB using the previously created DAO. Finally in order to make the application run those pending transactions we would use the current behavior of the application: Each time that the applications is opened, the list of habits gets iterated in order to be placed on the view, and now with the given current status of each habit and the connection status, we would make the necessary transactions to the mongo DB cluster when possible",
         image: NewLogic,
         alt: "New logic",
         h: "600px",
@@ -135,6 +135,11 @@ export default function EventualCon() {
         {contenido.map((contenido) =>
           buildProfilerSetting(contenido.name, curNav, contenido.contenido)
         )}
+      </div>
+      <hr/>
+      <h2 className="title text-center  ">Overview</h2>
+      <div className="container">
+        <h3 className="alignTextCenter">Even though currently Loop Habit tracker works perfectly with out or with internet, the app could improve easily, integrating what they already have with a cloud data base, with out affecting their current functionalities and accessing to global data analysis of the user’s habits and cloud support to their clients (which the lack of it seems to be a recurring pain point on the app’s reviews). </h3>
       </div>
     </div>
   );

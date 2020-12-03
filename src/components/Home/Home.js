@@ -196,10 +196,7 @@ export default function Home() {
           >
             <Viewer
               fileUrl={file}
-              plugins={[
-                // Register plugins
-                defaultLayoutPluginInstance,
-              ]}
+             
             />
           </div>
         </div>

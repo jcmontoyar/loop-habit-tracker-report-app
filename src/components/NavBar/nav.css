@@ -36,7 +36,7 @@ header{
 }
 
 .navBar>a.selected{
-    color: #89b73a;
+    color: #43ca0d;;
 }
 
 .navbar-brand>a{
@@ -45,11 +45,15 @@ header{
 
 
 .navbar-brand>a.selected{
-    color: #89b73a;
+    color: #43ca0d;
 }
 
 .navbar-nav>a.activeSubNav{
     color: black !important;
     font-weight: 500;
-    
+    border-bottom: 3px solid #926ed1;   
+}
+
+.navbar-nav>a.navContent:hover{
+    border-bottom: 3px solid #926ed1;   
 }

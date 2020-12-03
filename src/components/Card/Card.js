@@ -6,7 +6,7 @@ export default function Card({ image, title, text, alt }) {
   return (
     <div className="col col-lg-3 col-md-4 col-sm-6 col-12 my-auto mx-auto">
       <CardB style={{ width: "15rem" }}>
-        <CardB.Img variant="top" src={image} alt={alt}/>
+        {getImage(image, alt)}
         <CardB.Body>
           <div className="text-center">
             <CardB.Title>{title}</CardB.Title>
@@ -15,5 +15,12 @@ export default function Card({ image, title, text, alt }) {
         </CardB.Body>
       </CardB>
     </div>
+  );
+}
+
+function getImage(image, alt){
+  let ret = image === undefined ? "": <CardB.Img variant="top" src={image} alt={alt}/>
+  return(
+    ret
   );
 }

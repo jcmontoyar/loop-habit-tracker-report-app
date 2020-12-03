@@ -11,10 +11,7 @@ html,
     height: 100%;
     font-family: "Roboto";
   }
-
-  .content{
-  }
-
+  
 h1{
   color: #6e529e;
   padding-top: 25px;
@@ -26,6 +23,7 @@ h2,h3,h4,h5{
   font-weight: 400;
   text-align: justify;
   text-justify: inter-character;
+  line-height: 1.6;
 }
 
 p{
