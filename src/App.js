@@ -10,6 +10,7 @@ import Multi from "./components/Multi/Multi";
 import Memory from "./components/Memory/Memory";
 import Microa from "./components/Micro/Micro";
 import Security from "./components/Security/Security";
+import Overview from "./components/Overview/Overview";
 
 import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
@@ -22,6 +23,7 @@ const items = [
   "Memory management",
   "Micro-optimizations",
   "Security",
+  "Overview"
 ];
 
 function App() {
@@ -64,6 +66,9 @@ function App() {
             </Route>
             <Route path="/Security">
               <Security />
+            </Route>
+            <Route path="/Overview">
+              <Overview />
             </Route>
             {getButtons(activeItem, handleChange)}
           </main>
@@ -108,7 +113,7 @@ function getButtons(activeItem, handleChange) {
                 variant="success"
                 onClick={() => handleChange(prev)}
               >
-                <i class="fa fa-angle-left btnIconLeft"></i>
+                <i className="fa fa-angle-left btnIconLeft"></i>
                 {prev}
               </Button>
             </Link>
@@ -125,7 +130,7 @@ function getButtons(activeItem, handleChange) {
                 onClick={() => handleChange(next)}
               >
                 {next}
-                <i class="fa fa-angle-right btnIconRight"></i>
+                <i className="fa fa-angle-right btnIconRight"></i>
               </Button>
             </Link>
           </div>

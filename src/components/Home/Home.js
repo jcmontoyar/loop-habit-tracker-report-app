@@ -6,8 +6,6 @@ import file from "./App Report Habit Tracker.pdf";
 import { Viewer } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 // Plugins pdf
-import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
-import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 
 // Card
 import Card from "../Card/Card.js";
@@ -51,7 +49,14 @@ const overviewChar = [
   {
     image: Download,
     alt: "Download image",
-    description: "Over 1M Downloads",
+    description: (
+      <a
+        href="https://play.google.com/store/apps/details?id=org.isoron.uhabits&hl=en&gl=US"
+        target="blank"
+      >
+        Over 1M Downloads
+      </a>
+    ),
   },
   {
     image: Star,
@@ -75,7 +80,11 @@ const overviewRepository = [
   {
     image: GitHub,
     alt: "Github icon",
-    description: "Hosted in GitHub",
+    description: (
+      <a href="https://github.com/iSoron/uhabits" target="blank">
+        Hosted in GitHub
+      </a>
+    ),
   },
   {
     image: Commit,
@@ -97,9 +106,6 @@ export default function Home() {
     setIndex(selectedIndex);
   };
 
-  // Create new pdf plugin instance
-  const defaultLayoutPluginInstance = defaultLayoutPlugin();
-
   return (
     <div className="container">
       <h1 className="text-center">Loop Habit Tracker Report</h1>
@@ -112,38 +118,46 @@ export default function Home() {
         </div>
         <div className="col col-md-6  col-12 my-auto">
           <div className="container">
-          <div className="row">
-            <div className="col col-12">
-              <Carousel
-                activeIndex={index}
-                onSelect={handleSelect}
-                nextIcon={<span><i className="fa fa-angle-right styleFlecha"></i></span>}
-                prevIcon={<span><i className="fa fa-angle-left styleFlecha"></i></span>}
-                className="card centrar"
-                style={{
-                  height: "550px",
-                  width: "300px",
-                }}
-              >
-                {functionalities.map((func) => (
-                  <Carousel.Item key={"image" + func.alt}>
-                    <img
-                      className="center"
-                      src={func.image}
-                      alt={func.alt}
-                      width="300px"
-                      height="550px"
-                    />
-                  </Carousel.Item>
-                ))}
-              </Carousel>
+            <div className="row">
+              <div className="col col-12">
+                <Carousel
+                  activeIndex={index}
+                  onSelect={handleSelect}
+                  nextIcon={
+                    <span>
+                      <i className="fa fa-angle-right styleFlecha"></i>
+                    </span>
+                  }
+                  prevIcon={
+                    <span>
+                      <i className="fa fa-angle-left styleFlecha"></i>
+                    </span>
+                  }
+                  className="card centrar"
+                  style={{
+                    height: "550px",
+                    width: "300px",
+                  }}
+                >
+                  {functionalities.map((func) => (
+                    <Carousel.Item key={"image" + func.alt}>
+                      <img
+                        className="center"
+                        src={func.image}
+                        alt={func.alt}
+                        width="300px"
+                        height="550px"
+                      />
+                    </Carousel.Item>
+                  ))}
+                </Carousel>
+              </div>
+              <div className="col col-12">
+                <h3 className="text-center">
+                  {functionalities[index].description}
+                </h3>
+              </div>
             </div>
-            <div className="col col-12">
-              <h3 className="text-center">
-                {functionalities[index].description}
-              </h3>
-            </div>
-          </div>
           </div>
         </div>
       </div>
@@ -194,13 +208,11 @@ export default function Home() {
               width: "800px",
             }}
           >
-            <Viewer
-              fileUrl={file}
-             
-            />
+            <Viewer fileUrl={file} />
           </div>
         </div>
       </div>
+      <p className="text-center">
       <a
         target="_blank"
         rel="noreferrer"
@@ -208,6 +220,7 @@ export default function Home() {
       >
         Click here if the PDF does not show up
       </a>
+      </p>
     </div>
   );
 }

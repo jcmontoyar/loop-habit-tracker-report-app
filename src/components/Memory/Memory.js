@@ -163,7 +163,7 @@ export default function Memory() {
         <div className="row">
           <div className="col col-12 col-md-6 colorBorderRight my-auto">
             <p className="alignTextCenter">
-            We can conclude from this section that the application performs very well in terms of memory management (during the whole execution memory allocation was on the 42MB range) even with the memory leaks that we found. However, these are common among the Android apps because displaying a new view usually leads to the memory leaks that we have reported. 
+            We can conclude from this section that the application performs very well in terms of memory management (during the whole execution memory allocation was on the 42MB range), even with the memory leaks that we found. However, these are common among the Android apps because displaying a new view usually leads to the memory leaks that we have reported. 
             </p>
           </div>
           <div className="col col-12 col-md-6 my-auto">
@@ -180,7 +180,7 @@ function buildProfilerSetting(name, curNav, contenido) {
   let style = name === curNav ? "" : "none";
 
   return (
-    <div style={{ display: style }}>
+    <div  key={name} sstyle={{ display: style }}>
       <Content contenidos={contenido}></Content>
     </div>
   );

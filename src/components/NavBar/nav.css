@@ -35,6 +35,12 @@ header{
     font-size: 16px;
 }
 
+.navBar>.nav-item{
+    color: white;
+    padding-left: 30px;
+    font-size: 13px;
+}
+
 .navBar>a.selected{
     color: #43ca0d;;
 }

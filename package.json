@@ -10,6 +10,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.5.3",
+    "d3": "^6.3.0",
     "pdfjs": "^2.4.2",
     "pdfjs-dist": "^2.5.207",
     "react": "^17.0.1",

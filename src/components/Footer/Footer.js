@@ -8,9 +8,8 @@ import "./Footer.css"
 
 export default function Footer() {
   return (
-    <footer>
-      <Navbar expand="lg"  variant="dark" className="colorHeader">
-        <Navbar.Brand href="/home">
+      <Navbar expand="lg" sticky="bottom"  variant="dark" className="colorHeader">
+        <Navbar.Brand>
           <Image
             src={logo}
             width="30"
@@ -19,15 +18,14 @@ export default function Footer() {
             alt="React Bootstrap logo"
             roundedCircle
           />
-          Loop Habit Tracker
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav-footer" />
         <Navbar.Collapse id="basic-navbar-nav-footer">
           <Nav className="mr-auto navBar"></Nav>
           <Nav className="navBar">
+            <Nav.Item>Report by Julián Montoya and Juan Sebastián Numpaque</Nav.Item>
+            <Nav.Item>Created with React</Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </footer>
   );
 }

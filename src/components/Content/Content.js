@@ -6,7 +6,7 @@ export default function Content({ contenidos }) {
   return (
     <>
       {contenidos.map((contenido) => (
-        <div className="container-fluid">
+        <div className="container-fluid" key={contenido.titulo}>
         
           <div className="row">
             {getFirst(val, contenido)}

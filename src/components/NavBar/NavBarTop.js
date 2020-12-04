@@ -14,6 +14,7 @@ import logo from "./logo.png";
     "Memory management",
     "Micro-optimizations",
     "Security",
+    "Overview"
   ];
 
 export default function NavBarTop({setActiveItem, activeItem}) {
@@ -31,7 +32,7 @@ export default function NavBarTop({setActiveItem, activeItem}) {
 
   return (
     <header className="App-header">
-      <Navbar expand="lg" sticky="top" variant="dark" className="colorHeader">
+      <Navbar expand="xl" sticky="top" variant="dark" className="colorHeader">
         <Navbar.Brand>
           <Link to="/" onClick={() => handleChange("home")} className={active}>
             <Image

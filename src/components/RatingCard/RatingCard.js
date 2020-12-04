@@ -1,22 +1,21 @@
 import React from "react";
 import CardB from "react-bootstrap/Card";
 
-export default function RatingCard({ score, title, text}) {
+export default function RatingCard({ score, title, text }) {
   return (
-      <CardB style={{ width: "23rem" }}>
-        <CardB.Body>
-          <div className="text-center">
+    <CardB style={{ width: "23rem" }}>
+      <CardB.Body>
+        <div className="text-center">
           {getScore(score)}
-            <CardB.Title className="cardRatingtitle">{title}</CardB.Title>
-            
-          </div>
-          <CardB.Text>{text}</CardB.Text>
-        </CardB.Body>
-      </CardB>
+          <CardB.Title className="cardRatingtitle">{title}</CardB.Title>
+        </div>
+        <CardB.Text>{text}</CardB.Text>
+      </CardB.Body>
+    </CardB>
   );
 }
 
-function getScore(score){
+function getScore(score) {
   return (
     <span>
       {Array.from({ length: Math.floor(score) }, (_, j) => (

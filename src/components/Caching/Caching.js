@@ -144,7 +144,7 @@ function buildProfilerSetting(name, curNav, contenido) {
   let style = name === curNav ? "" : "none";
 
   return (
-    <div style={{ display: style }}>
+    <div  key={name} style={{ display: style }}>
       <Content contenidos={contenido}></Content>
     </div>
   );
